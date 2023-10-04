@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Información al navegador -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Conexion con CSS hoja de estilos-->
+    <link rel="stylesheet" href="./style.css">
+    <!-- copiar el link de la fuente para el texto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+</head>
+<!-- BODY - Todo lo que ve el usuario -->
+<body>
+    <main>
+        <h1>Book Friend</h1>
+        <!-- IMG a través de la web.  source(fuente)-->
+        <img src="https://img.freepik.com/vector-gratis/ilustracion-pila-libros-diseno-plano-dibujado-mano_23-2149341898.jpg?w=826&t=st=1694485628~exp=1694486228~hmac=d58e8741fd21d2782954279b3836ae9bf59f3159f5d59ab2b4ae36712d442eef" alt="">
+        <!-- IMG en tu computadora  SRC (¿donde está tu imagen?)-->
+        <!-- Se agrega clase para identificar para editar en CSS -->
+        <img class="real-books" src="./images/book2.jpg", alt="">
+        <!-- FORMULARIOS ; "action" indica donde quiero mandarlo-->
+        <form>
+            <!-- Formulario tipo INPUT TEXT -->
+            <p>Cajita para sugerir una reseña</p>
+            <!-- label es Etiqueta donde encapsula la información, identifica cada respuesta-->
+            <label for="reseña-sugerida">
+                <!-- type - tipo ( TEX - RADIO - CHECKBOX)-->
+                <input type="text">
+                <button>Enviar</button>
+            </label>
+
+            <p>¿Que te parecieron nuestras reseñas?</p>
+            <label for="reseñas-excelente">
+                <!-- atributo NAME al input para relacionar respuestas -->
+                <input type="radio" name="calificacion"> Excelentes
+            </label>
+            <!-- br es salto de linea (break)-->
+            <br>
+            <label for="reseñas-medio">
+                <input type="radio" name="calificacion"> Regulares
+            </label>
+            <br>
+            <label for="reseñas-malo">
+                <input type="radio" name="calificacion"> Malas
+            </label>
+
+            <p>¿Que tipo de contenido te gustaria ver mas en nuestra pagina?</p>
+            <label for="libros-populares">
+                <input type="checkbox" name="mas-contenido"> Reseñas de libros populares
+            </label>
+            <br>
+            <label for="libros-menos-conocidos">
+                <input type="checkbox" name="mas-contenido"> Reseñas de libros menos populares
+            </label>
+            <br>
+            <label for="entrevistas">
+                <input type="checkbox" name="mas-contenido"> Entrevistas con autores
+            </label>
+            <br>
+            <label for="consejos">
+                <input type="checkbox" name="mas-contenido"> Artículos sobre consejos de lectura
+            </label>
+            <br>
+            <label for="otro">
+                <input type="text" name="mas-contenido"> Otra (especifica)
+            </label>
+        </form>
+
+
+    </main>
+</body>
+</html>
